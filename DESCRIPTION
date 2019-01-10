@@ -1,13 +1,15 @@
 Package: ccscourse
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A Package to Support Learning Computational Communication Science
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Author: André Calero Valdez
+Maintainer: André Calero Valdez <andrecalerovaldez@gmail.com>
+Description: Text will follow.
+    More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: MIT
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 
-    covr
+    covr,
+    testthat
