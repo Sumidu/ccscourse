@@ -10,6 +10,18 @@ Description: Text will follow.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends:
+    tidyverse,
+    corrplot
+Imports:
+    likert,
+    grDevices,
+    stats,
+    magrittr
 Suggests: 
     covr,
-    testthat
+    testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.1.1
+VignetteBuilder: knitr
