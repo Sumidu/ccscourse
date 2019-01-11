@@ -15,13 +15,14 @@
 #' @import corrplot
 #' @import magrittr
 #' @import stats
+#' @import dplyr
 cor_matrix_plot <- function(data, conf.level = .95) {
 
   if(dim(data)[2]<2){
     stop("Data must contain at least 2 columns.")
   }
 
-  data %>% mutate_if(is.ordered, as.numeric) -> data
+  data %>% dplyr::mutate_if(is.ordered, as.numeric) -> data
 
   requireNamespace("tidyverse", quietly = TRUE)
   rwthcolors <- rwth.colorpalette()

@@ -7,5 +7,5 @@
 
 
 .onAttach <- function(libname, pkgname) {
-  packageStartupMessage("Welcome to my package")
+  packageStartupMessage("CCSCourse package loaded.")
 }
