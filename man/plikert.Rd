@@ -6,7 +6,7 @@
 \usage{
 plikert(items, item_labels = NULL, response_label = "Response",
   xlab = NULL, ylab = "Percent", title = NULL, subtitle = NULL,
-  caption = NULL)
+  caption = NULL, legend = "right", ...)
 }
 \arguments{
 \item{items}{A data-frame or tibble with ordered factors only.}
@@ -24,6 +24,10 @@ plikert(items, item_labels = NULL, response_label = "Response",
 \item{subtitle}{A plot subtitle}
 
 \item{caption}{A plot caption}
+
+\item{legend}{Where the legend is placed ("top", "bottom", "right", "left")}
+
+\item{...}{additional options passed to plot.likert from \link{likert.options}}
 }
 \description{
 Method to generate a Likert plot using the likert pkg
@@ -31,4 +35,7 @@ Method to generate a Likert plot using the likert pkg
 \examples{
 data <- data.frame(a = factor(c("a","b","a")), b=factor(c("a", "b", "b")))
 plikert(data)
+}
+\seealso{
+\link{likert.options} \link{plot.likert}
 }
