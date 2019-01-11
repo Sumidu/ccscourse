@@ -11,14 +11,14 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-    tidyverse,
     corrplot,
     dplyr
 Imports:
     likert,
     grDevices,
     stats,
-    magrittr
+    magrittr,
+    ggplot2
 Suggests: 
     covr,
     testthat,

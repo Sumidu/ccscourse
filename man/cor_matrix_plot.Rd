@@ -18,6 +18,7 @@ Returns nothing. Is called for sideeffects (i.e. the plot)
 Plots a correlation matrix plot. The to
 }
 \examples{
-library(tidyverse)
+library(magrittr)
+library(dplyr)
 mtcars \%>\% select(disp, qsec) \%>\% cor_matrix_plot()
 }

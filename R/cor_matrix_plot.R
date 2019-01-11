@@ -9,9 +9,9 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
+#' library(magrittr)
+#' library(dplyr)
 #' mtcars %>% select(disp, qsec) %>% cor_matrix_plot()
-#' @import tidyverse
 #' @import corrplot
 #' @import magrittr
 #' @import stats
@@ -24,7 +24,6 @@ cor_matrix_plot <- function(data, conf.level = .95) {
 
   data %>% dplyr::mutate_if(is.ordered, as.numeric) -> data
 
-  requireNamespace("tidyverse", quietly = TRUE)
   rwthcolors <- rwth.colorpalette()
   p <- corrplot::cor.mtest(data, conf.level = .95)
   col <- grDevices::colorRampPalette(c(rwthcolors$red, "#FFFFFF", rwthcolors$blue))
