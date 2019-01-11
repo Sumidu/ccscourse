@@ -14,9 +14,9 @@
 #'
 #' @returns a ggplot object
 #' @export
-#' @import likert
-#' @import graphics
-#' @import ggplot2
+#' @importFrom likert likert
+#' @importFrom graphics plot
+#' @importFrom ggplot2 guides labs guide_legend
 #' @import grDevices
 #' @examples
 #' data <- data.frame(a = factor(c("a","b","a")), b=factor(c("a", "b", "b")))

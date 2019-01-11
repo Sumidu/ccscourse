@@ -12,10 +12,10 @@
 #' library(magrittr)
 #' library(dplyr)
 #' mtcars %>% select(disp, qsec) %>% cor_matrix_plot()
-#' @import corrplot
+#' @importFrom corrplot corrplot cor.mtest
 #' @import magrittr
-#' @import stats
-#' @import dplyr
+#' @importFrom stats cor
+#' @importFrom dplyr mutate_if
 cor_matrix_plot <- function(data, conf.level = .95) {
 
   if(dim(data)[2]<2){
